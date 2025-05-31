@@ -105,8 +105,8 @@ class SSH:
             exit_status = stdout.channel.recv_exit_status()
 
             # Read stdout and stderr
-            stdout_lines = stdout.readlines()
-            stderr_lines = stderr.readlines()
+            stdout_lines = stdout.read().decode('utf-8', errors='replace').splitlines()
+            stderr_lines = stderr.read().decode('utf-8', errors='replace').splitlines()
 
             if exit_status != 0:
                 print(f"Command '{command_}' exited with status {exit_status}")
