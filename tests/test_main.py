@@ -1,9 +1,8 @@
 import unittest
-from unittest.mock import MagicMock, patch
 
+from unittest.mock import MagicMock, patch
 from paramiko import SSHClient
 from paramiko.ssh_exception import SSHException
-
 from ssh_wise import SSH
 
 
