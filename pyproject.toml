@@ -19,11 +19,11 @@ classifiers = [
 ]
 dependencies = [
     "paramiko>=3.0",
-    "log-wise @ git+https://github.com/klaus-moser/log-wise.git",
+    "log-wise @ git+ssh://git@github.com/tg4nd4lf/log-wise.git",
 ]
 
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [project.urls]
-Repository = "https://github.com/klaus-moser/ssh-wise"
+Repository = "https://github.com/tg4nd4lf/ssh-wise"
